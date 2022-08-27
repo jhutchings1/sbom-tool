@@ -1,0 +1,24 @@
+name: 'sbom-tool'
+description: 'Generates an SBOM based on the contents of a directory'
+inputs:
+  path:  
+    description: 'The path to scan'
+    required: true
+    default: '.'
+  outputPath:
+    description: 'The path to place the resulting SBOM in'
+    required: true
+    default: 'sboms'
+  verboseLogging: 
+    description: 'Whether to enable verbose logging'
+    required: true
+    default: false
+  dockerImageToScan:
+    description: 'Optional parameter to specify the name of a docker image to scan. Example "imageName:0.0.1"'
+    required: false
+outputs:
+  outputPath: 
+    description: 'The path where the resulting SBOM lives'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
