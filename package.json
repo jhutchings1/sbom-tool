@@ -1,0 +1,29 @@
+{
+  "name": "sbom-tool",
+  "version": "1.0.0",
+  "description": "A tool for generating SBOMs",
+  "main": "action/action.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microsoft/sbom-tool.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/microsoft/sbom-tool/issues"
+  },
+  "homepage": "https://github.com/microsoft/sbom-tool#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@actions/exec": "^1.1.1",
+    "@actions/github": "^5.0.3",
+    "@github/dependency-submission-toolkit": "^1.2.2"
+  }
+}

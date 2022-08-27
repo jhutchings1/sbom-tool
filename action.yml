@@ -1,6 +1,9 @@
 name: 'sbom-tool'
 description: 'Generates an SBOM based on the contents of a directory'
 inputs:
+  token: 
+    description: 'GitHub token for the workflow'
+    required: true
   path:  
     description: 'The path to scan'
     required: true
